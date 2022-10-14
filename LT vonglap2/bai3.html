@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập số N:");
+    let i, j;
+    for (i=1; i<=n; i++) {
+        for (j=1; j<=i; j++) {
+            document.write("*");
+        }
+        document.write("</br>");
+    }
+    document.write("</br>");
+    for (i=n; i>0; i--) {
+        for (j=i; j>0; j--) {
+            document.write("*");
+        }
+        document.write("</br>");
+    }
+    document.write("</br>");
+    for (i=1; i<=n; i++) {
+        for (j=1; j<=(n-i); j++) {
+            document.write("&nbsp ");
+        }
+        for (j=1; j<=i; j++){
+            document.write("*");
+        }
+        document.write("</br>");
+    }
+    document.write("</br>");
+    for (i=n; i>0; i--) {
+        for (j=(n-i); j>0; j--) {
+            document.write("&nbsp ");
+        }
+        for (j=i; j>0; j--){
+            document.write("*");
+        }
+        document.write("</br>");
+    }
+</script>
+</body>
+</html>
